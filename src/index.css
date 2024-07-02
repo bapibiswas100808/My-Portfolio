@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Quattrocento:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basic CSS   */
+body {
+  background-color: #1c1c20;
+  font-family: "Quattrocento", serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+p,
+li,
+a {
+  line-height: 1.6;
+  font-family: "Quattrocento", serif;
+}
+.project-btn {
+  background-color: #217c7c;
+  color: white;
+  border-radius: 20px;
+  border: 0;
+}
+
+.project-btn:hover {
+  background-color: #363131;
+  border: 1px solid #217c7c;
+}
