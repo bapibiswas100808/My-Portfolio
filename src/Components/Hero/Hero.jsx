@@ -18,11 +18,15 @@ const Hero = () => {
                 Front End Developer
               </h2>
               <p className="py-6">
-                Over the past year, as a developer and web designer, I have
-                worked with a variety of businesses and start-ups to help them
-                reach their full potential and attract new clients.
+                I am a passionate front-end developer dedicated to creating
+                intuitive and visually appealing web applications. I thrive on
+                learning new technologies, currently focusing on Next.js. With a
+                strong foundation in HTML5, CSS3, JavaScript, and various modern
+                frameworks like React, Tailwind, Bootstrap, and Express. By
+                leveraging my expertise, I can help businesses enhance their
+                online presence, improve user engagement, and drive growth.
               </p>
-              <button className="btn project-btn">Learn More</button>
+              <button className="btn project-btn text-xl">Learn More</button>
             </div>
           </div>
         </div>
