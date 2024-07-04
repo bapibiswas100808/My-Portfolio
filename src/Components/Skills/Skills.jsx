@@ -33,7 +33,7 @@ const Skills = () => {
     { name: "MongoDB", logo: <SiMongodb /> },
   ];
   return (
-    <div className="border-b-2 border-[#363131] mb-10">
+    <div id="skill" className="border-b-2 border-[#363131] mb-10">
       <div className="max-w-[1170px] mx-auto text-white px-5 lg:px-0">
         <div className="relative px-5 lg:px-0">
           <h2 className="relative z-30">
@@ -44,7 +44,10 @@ const Skills = () => {
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row py-10 gap-5 min-h-screen">
-          <div className="bg-[#217c7c]  p-[50px] pt-[50px] pb-[50px] px-10 rounded-l-[20px] border-2 border-[#807d7d]">
+          <div
+            data-aos="fade-up"
+            className="bg-[#217c7c]  p-[50px] pt-[50px] pb-[50px] px-10 rounded-l-[20px] border-2 border-[#807d7d]"
+          >
             <h2 className="font-bold text-3xl">My Skills</h2>
             <div className="pt-5">
               {skills.map((skill, idx) => (

@@ -1,7 +1,7 @@
 import { ReactTyped } from "react-typed";
 const Blogs = () => {
   return (
-    <div className="border-b-2 border-[#363131] mb-10">
+    <div id="blogs" className="border-b-2 border-[#363131] mb-10">
       <div className="max-w-[1170px] mx-auto text-white">
         <div className="relative px-5 lg:px-0">
           <h2 className="relative z-30">

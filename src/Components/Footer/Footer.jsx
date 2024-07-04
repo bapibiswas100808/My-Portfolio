@@ -2,7 +2,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from "../../assets/image/logo5.png";
 const Footer = () => {
   return (
-    <div>
+    <div id="footer">
       <div className="border-b-2 border-[#363131]">
         <div className="max-w-[1170px] mx-auto">
           <footer className="footer text-white p-10">

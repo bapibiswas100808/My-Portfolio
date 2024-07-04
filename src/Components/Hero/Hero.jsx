@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
-    <div className="border-b-2 border-[#363131]">
+    <div id="hero" className="border-b-2 border-[#363131]">
       <div className="max-w-[1170px] mx-auto my-10 ">
         <div className="hero text-white min-h-screen pb-3">
           <div className="hero-content flex-col-reverse lg:flex-row-reverse gap-5">
@@ -45,7 +45,9 @@ const Hero = () => {
                 leveraging my expertise, I can help businesses enhance their
                 online presence, improve user engagement, and drive growth.
               </p>
-              <button className="btn project-btn text-xl">Learn More</button>
+              <a href="#footer" className="btn project-btn text-xl">
+                Contact me
+              </a>
             </div>
           </div>
         </div>

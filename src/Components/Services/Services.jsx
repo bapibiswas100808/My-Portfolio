@@ -4,7 +4,7 @@ import { LuFrame } from "react-icons/lu";
 
 const Services = () => {
   return (
-    <div className="border-b-2 border-[#363131] mb-10">
+    <div id="service" className="border-b-2 border-[#363131] mb-10">
       <div className="min-h-screen max-w-[1170px] mx-auto text-white py-10">
         <div className="relative px-5 lg:px-0">
           <h2 className="relative z-30">

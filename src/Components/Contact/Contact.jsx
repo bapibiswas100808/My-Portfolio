@@ -12,7 +12,7 @@ const Contact = () => {
     });
   };
   return (
-    <div className="border-b-2 border-[#363131]">
+    <div id="contact" className="border-b-2 border-[#363131]">
       <div className="max-w-[1170px] mx-auto text-white px-5 lg:px-0">
         <div className="relative px-5 lg:px-0">
           <h2 className="relative z-30">
@@ -26,9 +26,18 @@ const Contact = () => {
           <div className="hero min-h-screen">
             <div className="flex flex-col lg:flex-row gap-5">
               <div className="bg-[#363131] rounded-lg flex-1 py-8">
-                <img src={contactImg} className="rounded-lg" />
+                <img
+                  data-aos="flip-left"
+                  data-aos-duration="2000"
+                  src={contactImg}
+                  className="rounded-lg"
+                />
               </div>
-              <div className=" flex-1 bg-[#217C7C] rounded-lg">
+              <div
+                data-aos="flip-right"
+                data-aos-duration="2000"
+                className=" flex-1 bg-[#217C7C] rounded-lg"
+              >
                 <h2 className="text-3xl font-bold ml-8 pt-8">Contact Me</h2>
                 <div className="card">
                   <form onSubmit={handleContact} className="card-body">
