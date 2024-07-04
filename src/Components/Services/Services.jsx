@@ -5,7 +5,7 @@ import { LuFrame } from "react-icons/lu";
 const Services = () => {
   return (
     <div className="min-h-screen max-w-[1170px] mx-auto text-white py-10">
-      <div className="service-area relative px-5 lg:px-0">
+      <div className="relative px-5 lg:px-0">
         <h2 className="relative z-30">
           <span className="text-4xl font-bold relative z-30"> What I do?</span>
           <span className="absolute h-14 w-14 bg-[#217C7C] rounded-full -left-3  lg:-left-4 top-0 transform -translate-y-2 z-0"></span>
@@ -13,7 +13,12 @@ const Services = () => {
       </div>
       <div className="flex flex-col lg:flex-row gap-5 my-10 px-5 lg:px-0">
         {/* one */}
-        <div className="flex-1 single-service p-10 bg-gray-800 rounded-lg relative z-20 overflow-hidden transition duration-1000">
+        <div
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          className="flex-1 single-service p-10 bg-gray-800 rounded-lg relative z-20 overflow-hidden transition duration-1000"
+        >
           <FaMobile className="text-4xl mb-14"></FaMobile>
           <h2 className="text-3xl font-bold mb-5">
             Responsive Web Development
@@ -27,7 +32,12 @@ const Services = () => {
           <span className="absolute h-60 w-60 bg-[#217C7C] rounded-full top-[-120px] left-[-60px] z-[-1] transition duration-500"></span>
         </div>
         {/* two */}
-        <div className="flex-1 single-service p-10 bg-gray-800 rounded-lg relative z-20 overflow-hidden transition duration-1000">
+        <div
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          className="flex-1 single-service p-10 bg-gray-800 rounded-lg relative z-20 overflow-hidden transition duration-1000"
+        >
           <LuFrame className="text-4xl mb-14"></LuFrame>
           <h2 className="text-3xl font-bold mb-5">
             Frontend Framework Development
@@ -41,7 +51,12 @@ const Services = () => {
           <span className="absolute h-60 w-60 bg-[#217C7C] rounded-full top-[-120px] left-[-60px] z-[-1] transition duration-500"></span>
         </div>
         {/* three */}
-        <div className="flex-1 single-service p-10 bg-gray-800 rounded-lg relative z-20 overflow-hidden transition duration-1000">
+        <div
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000"
+          className="flex-1 single-service p-10 bg-gray-800 rounded-lg relative z-20 overflow-hidden transition duration-1000"
+        >
           <GrDocumentPerformance className="text-4xl mb-14"></GrDocumentPerformance>
           <h2 className="text-3xl font-bold mb-5">
             Browser Compatibility and Optimization

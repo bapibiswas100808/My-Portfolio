@@ -1,4 +1,5 @@
 import profileImg from "../../assets/image/hero-image5.png";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
@@ -6,16 +7,34 @@ const Hero = () => {
       <div className="max-w-[1170px] mx-auto my-10 ">
         <div className="hero text-white min-h-screen pb-3">
           <div className="hero-content flex-col-reverse lg:flex-row-reverse gap-5">
-            <div className="flex-1">
+            <div
+              // data-aos="fade-left"
+              // data-aos-duration="2000"
+              className="flex-1"
+            >
               <img
                 src={profileImg}
                 className="rounded-3xl shadow-2xl border-2 border-[#363131]"
               />
             </div>
-            <div className="flex-1 text-center lg:text-left">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              className="flex-1 text-center lg:text-left"
+            >
               <h1 className="text-3xl font-bold mb-4">Bapi Biswas</h1>
               <h2 className="text-3xl lg:text-5xl font-bold">
-                Front End Developer
+                <span className="pr-2"> I am a</span>
+                <ReactTyped
+                  strings={[
+                    "Front End Developer",
+                    "Programmer",
+                    "Creative Thinker",
+                  ]}
+                  typeSpeed={40}
+                  backSpeed={50}
+                  loop
+                />
               </h2>
               <p className="py-6">
                 I am a passionate front-end developer dedicated to creating

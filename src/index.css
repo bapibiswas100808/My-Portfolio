@@ -30,10 +30,12 @@ a {
   background-color: #217c7c;
   color: white;
   border-radius: 20px;
-  border: 0;
 }
 
 .project-btn:hover {
   background-color: #363131;
   border: 1px solid #217c7c;
+}
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1 !important;
 }
