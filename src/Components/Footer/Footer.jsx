@@ -37,11 +37,11 @@ const Footer = () => {
               <div className="mt-5">
                 <p className="text-lg font-bold">Contact Info:</p>
                 <p className="text-lg">
-                  <span className="mr-2 font-semibold">Email:</span>{" "}
-                  biswasbapi100808@gmail.com
+                  <span className="mr-2 font-semibold">Email:</span>
+                  biswasbapi086@gmail.com
                 </p>
                 <p className="text-lg">
-                  <span className="mr-2 font-semibold">Phone:</span>{" "}
+                  <span className="mr-2 font-semibold">Phone:</span>
                   +8801642078595
                 </p>
               </div>
