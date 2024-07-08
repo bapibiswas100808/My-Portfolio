@@ -4,7 +4,7 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li className="text-lg">
-        <a>Home</a>
+        <a href="#root">Home</a>
       </li>
       <li className="text-lg">
         <a href="#hero">About</a>
@@ -24,7 +24,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="border-b-2 border-[#363131] py-2">
+    <div className="border-b-2 border-[#363131] sticky-header bg-[#1c1c20]">
       <div className="max-w-[1170px] mx-auto">
         <div className="navbar bg-[#1c1c20]">
           <div className="navbar-start">
@@ -56,7 +56,7 @@ const Navbar = () => {
                 {navLinks}
               </ul>
             </div>
-            <div className="flex">
+            <div className="flex cursor-pointer">
               <div className="hidden md:block">
                 <img className="h-14 mr-2" src={logo} alt="" />
               </div>

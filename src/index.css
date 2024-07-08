@@ -11,6 +11,9 @@ body {
   font-weight: 500;
   font-size: 17px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -38,4 +41,10 @@ a {
 }
 .group:hover .group-hover\:opacity-100 {
   opacity: 1 !important;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
