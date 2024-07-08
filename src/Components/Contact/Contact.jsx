@@ -1,15 +1,33 @@
 import Swal from "sweetalert2";
 import contactImg from "../../assets/image/contact-image.png";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 const Contact = () => {
-  const handleContact = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    Swal.fire({
-      position: "top-center",
-      icon: "success",
-      title: "Your Message Has been Sent!",
-      showConfirmButton: false,
-      timer: 1500,
-    });
+
+    emailjs
+      .sendForm("service_5dmimvc", "template_rptwpuu", form.current, {
+        publicKey: "4N_z4c-ySbObriCiv",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          Swal.fire({
+            position: "top-center",
+            icon: "success",
+            title: "Your Message Has been Sent!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
   return (
     <div id="contact" className="border-b-2 border-[#363131]">
@@ -40,7 +58,7 @@ const Contact = () => {
               >
                 <h2 className="text-3xl font-bold ml-8 pt-8">Contact Me</h2>
                 <div className="card">
-                  <form onSubmit={handleContact} className="card-body">
+                  <form ref={form} onSubmit={sendEmail} className="card-body">
                     <div className="form-control">
                       <label className="label">
                         <span className="label-text text-white">Full Name</span>
@@ -48,6 +66,7 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Your Name"
+                        name="user_name"
                         className="input input-bordered text-black"
                         required
                       />
@@ -59,6 +78,7 @@ const Contact = () => {
                       <input
                         type="email"
                         placeholder="email"
+                        name="user_email"
                         className="input input-bordered text-black"
                         required
                       />
@@ -73,11 +93,16 @@ const Contact = () => {
                       <textarea
                         className="textarea textarea-bordered h-24 text-black"
                         placeholder="Your Message"
+                        name="message"
                         required
                       ></textarea>
                     </label>
                     <div className="form-control mt-6">
-                      <button type="submit" className="btn project-btn text-lg">
+                      <button
+                        type="submit"
+                        value="Send"
+                        className="btn project-btn text-lg"
+                      >
                         Get In Touch!
                       </button>
                     </div>
